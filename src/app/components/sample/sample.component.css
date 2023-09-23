@@ -1,0 +1,49 @@
+ /* *{
+   background-color: #FFB6C1; 
+} */
+.sample-form{
+  text-align: center;
+}
+.forms{ 
+  display: flex; 
+  flex-direction: column; 
+   /* padding-left: 20px;
+   padding-top: 10px; */
+   align-items: center;
+}  
+.class-names{
+  padding-left: 50px;
+}
+.class-ages{
+  padding-left: 65px;
+}
+.class-dob{
+  padding-left: 40px;
+  width: 80%;
+}
+.class-degree{
+  padding-left: 35px;
+}
+.class-email{
+  padding-left: 45px;
+}
+.class-phno{
+  padding-left: 35px;
+}
+.class-address{
+  padding-left: 20px;
+}
+.class-button{
+  text-align: center;
+  
+}
+table {
+  width: 50%;
+}
+th{
+  padding: 15px;
+  text-align: center;
+}
+
+
+

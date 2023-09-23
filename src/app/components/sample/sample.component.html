@@ -1,0 +1,104 @@
+
+<form class="forms">
+    <h1 class="sample-form">FORM</h1>
+    <h2>Name
+        <mat-form-field class="class-names" appearance="outline">
+            <input matInput  [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+    </h2>
+
+    <h2>Age
+        <mat-form-field class="class-ages" appearance="outline">
+            <input matInput  [(ngModel)]="age" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+    </h2>
+
+    <h2>Gender
+        <mat-radio-group aria-label="class-gender"  [(ngModel)]="gender" [ngModelOptions]="{standalone: true}">
+            <mat-radio-button value="1">Male</mat-radio-button>
+            <mat-radio-button value="2">Female</mat-radio-button>
+        </mat-radio-group>
+    </h2>
+
+    <h2>DOB
+        <mat-form-field class="class-dob"  appearance="outline">
+            <input matInput [matDatepicker]="picker"  [(ngModel)]="dob" [ngModelOptions]="{standalone: true}">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker ></mat-datepicker>
+        </mat-form-field>
+     </h2>
+
+     <h2>Email
+        <mat-form-field class="class-email" appearance="outline">
+            <input matInput  [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+    </h2>
+
+    <h2>Ph.NO
+        <mat-form-field class="class-phno" appearance="outline">
+            <input matInput  [(ngModel)]="phno" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+    </h2>
+
+    <h2> Address
+        <mat-form-field class="class-address" appearance="outline">
+            <textarea matInput  [(ngModel)]="address" [ngModelOptions]="{standalone: true}"></textarea>
+        </mat-form-field>
+    </h2>
+
+</form>
+<div class="class-button">
+    <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Email</th>
+            <th>PhNo</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arr of listData; let i=index">
+            <td>{{arr.Name}}</td>
+            <td>{{arr.Age}}</td>
+            <td>{{arr.Gender}}</td>
+            <td>{{arr.DOB}}</td>
+            <td>{{arr.Email}}</td>
+            <td>{{arr.Phno}}</td>
+            <td>{{arr.Address}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
